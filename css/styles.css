@@ -1,0 +1,91 @@
+/* Estilos gerais */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+  }
+  
+  /* Formulários */
+  form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  input, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input {
+    background: #333;
+    color: #fff;
+  }
+  
+  button {
+    background: #ffcc00;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #ff9900;
+  }
+  
+  /* Listas de ingressos */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 400px;
+    animation: fadeIn 0.8s ease-in;
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  

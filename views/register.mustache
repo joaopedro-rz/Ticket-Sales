@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+
+</head>
+<style>
+/* estilos gerais */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: fadein 1s ease-in-out;
+  }
+  
+  a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+  }
+  
+  /* formulários */
+  form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    animation: slidein 0.5s ease-out;
+  }
+  
+  input, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input {
+    background: #333;
+    color: #fff;
+  }
+  
+  button {
+    background: #ffcc00;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #ff9900;
+  }
+  
+  /* listas de ingressos */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 400px;
+    animation: fadein 0.8s ease-in;
+  }
+  
+  /* animações */
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slidein {
+    from { transform: translatey(-20px); opacity: 0; }
+    to { transform: translatey(0); opacity: 1; }
+  }
+  
+</style>
+<body>
+  <h1>Registro</h1>
+  <form action="/auth/register" method="POST">
+    <label for="username">Usuário:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <button type="submit">Registrar</button>
+  </form>
+  <p>Já tem uma conta? <a href="/auth/login">Faça login</a></p>
+</body>
+</html>
