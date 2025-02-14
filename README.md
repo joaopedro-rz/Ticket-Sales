@@ -20,6 +20,19 @@ O **Ticket Sales System** é um sistema de venda de ingressos desenvolvido para 
 - Excluir ingressos.
 - Gerenciar usuários.
 
+
+## Passo 1: Criar um Banco de Dados
+### 1- Abra o pgAdmin e conecte-se ao servidor PostgreSQL.
+### 2- Clique com o botão direito em "Databases" > Create > Database.
+### 4- No campo Name, digite ticket_sales.
+### 5- Clique em Save.
+
+## Passo 2: Criar um Usuário no PostgreSQL
+## No pgAdmin, vá até "Login/Group Roles" e crie um novo usuário:
+Name: postgres
+Password: utfpr (você pode mudar isso).
+Vá até a aba Privileges e garanta que o usuário tem permissão de CONNECT e CREATE.
+
 ---
 ## Rotas da API
  ```bash
